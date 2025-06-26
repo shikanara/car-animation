@@ -68,8 +68,10 @@ h2{
     background-repeat: repeat-x;
 }
 
-.car {
-    position: relative;
+.car{
+    position: absolute;
+    bottom: 2%;
+    left: 24%;
 }
 
 .wheels {
@@ -107,12 +109,12 @@ h2{
 }
 
 .wheel.spinning {
-    animation: spin 0.3s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 /* Apply spinning when car is moving */
 .car.suspension .wheel {
-    animation: spin 0.3s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 .moveRight {
