@@ -4,7 +4,8 @@ $(document).ready(function(){
     $surface =$('.surface');
     $car =$('.car');
     $img = $('.car img').first(); // Target only the car image, not wheels
-    $wheels = $('.wheel');
+    $wheel = $('.wheel');
+    $wheels = $('.wheels');
     $container = $('.night'); // Main container
     let flag = true;
 
@@ -30,9 +31,9 @@ $(document).ready(function(){
 
             // Toggle wheel spinning
             if($car.hasClass('suspension')){
-                $wheels.addClass('spinning');
+                $wheel.addClass('spinning');
             } else {
-                $wheels.removeClass('spinning');
+                $wheel.removeClass('spinning');
             }
         }
     })
@@ -42,11 +43,11 @@ $(document).ready(function(){
             if(flag){
                 flag = false;
                 $img.attr('src', cars[0]);
-                $img.css('width', '25%');
+                $wheels.removeClass('recover');
             }else{
                 flag = true;
                 $img.attr('src', cars[1]);
-                $img.css('width', '25%');
+                $wheels.addClass('recover');
             }
         }
     })

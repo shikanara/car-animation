@@ -154,6 +154,10 @@ h2{
     pointer-events: none;
 }
 
+.recover {
+    width: 67.5%;
+}
+
 .wheel {
     position: absolute;
     width: 2.8%; /* Adjust size as needed */
