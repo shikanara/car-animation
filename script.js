@@ -44,10 +44,13 @@ $(document).ready(function(){
                 flag = false;
                 $img.attr('src', cars[0]);
                 $wheels.removeClass('recover');
+                $img.removeClass('car-recover');
             }else{
                 flag = true;
                 $img.attr('src', cars[1]);
+
                 $wheels.addClass('recover');
+                $img.addClass('car-recover');
             }
         }
     })

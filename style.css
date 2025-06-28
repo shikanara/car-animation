@@ -111,25 +111,22 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
-    min-height: 100vh;
+    height: 1000px;
     width: 100%;
 }
 
 /* Car and Scenery */
 
 .night {
-    height: 83vh;
-    width: 73vw;
-    margin: 6rem auto;
-    background: url(Scenery\ 1.jpg);
+    height: 1000px;
+    width: 100%;
     background-size: cover;
     position: relative;
-    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
     overflow-x: hidden;
 }
 
 .surface{
-    height: 200px;
+    height: 220px;
     width: 500%;
     background: url(Mountain\ 1.png);
     display: block;
@@ -141,7 +138,7 @@ h2{
 
 .car{
     position: absolute;
-    bottom: 2%;
+    bottom: 1%;
     left: 24%;
 }
 
@@ -155,7 +152,11 @@ h2{
 }
 
 .recover {
-    width: 67.5%;
+    width: 62.2%;
+}
+
+.car-recover {
+    width: 27.7% !important;
 }
 
 .wheel {
