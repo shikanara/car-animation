@@ -23,6 +23,20 @@ $(document).ready(function(){
         $container.addClass(selectedBackground);
     });
 
+    // Surface selector event - NEW FUNCTIONALITY
+    $('#surface-select').on('change', function(){
+        const selectedSurface = $(this).val();
+
+        // Remove any existing surface class
+        $surface.removeClass(function (index, className) {
+            return (className.match(/(^|\s)surface-\S+/g) || []).join(' ');
+        });
+
+        // Add new surface class
+        $surface.addClass('surface-' + selectedSurface);
+    });
+
+
     //keypress event
     $(document).on('keypress',function(e){
         if(e.which == 13){

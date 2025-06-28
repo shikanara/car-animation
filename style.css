@@ -125,15 +125,66 @@ h2{
     overflow-x: hidden;
 }
 
-.surface{
+.surface-mountain {
     height: 220px;
     width: 500%;
-    background: url(Mountain\ 1.png);
     display: block;
-    position: absolute; 
+    position: absolute;
     bottom: 0%;
     left: 0%;
     background-repeat: repeat-x;
+    background: url(surface/mountain.png);
+}
+
+.surface-city {
+    height: 220px;
+    width: 500%;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    background: url(surface/city.png); /* Add your city background image */
+}
+
+.surface-downtown {
+    background: url('downtown.png'); /* Add your downtown background image */
+}
+
+.surface-forest {
+    background: url('forest.png'); /* Add your forest background image */
+}
+
+.surface-desert {
+    background: url('desert.png'); /* Add your desert background image */
+}
+
+.surface-beach {
+    background: url('beach.png'); /* Add your beach background image */
+}
+
+.surface-countryside {
+    background: url('countryside.png'); /* Add your countryside background image */
+}
+
+.surface-highway {
+    background: url('highway.png'); /* Add your highway background image */
+}
+
+.surface-bridge {
+    background: url('bridge.png'); /* Add your bridge background image */
+}
+
+.surface-tunnel {
+    background: url('tunnel.png'); /* Add your tunnel background image */
+}
+
+.surface-industrial {
+    background: url('industrial.png'); /* Add your industrial background image */
+}
+
+.surface-suburban {
+    background: url('suburban.png'); /* Add your suburban background image */
 }
 
 .car{
