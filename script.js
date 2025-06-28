@@ -7,9 +7,9 @@ $(document).ready(function(){
     $wheels = $('.wheel');
     let flag = true;
 
-const cars = ['./Car 1.PNG','./Car 2.PNG']
+    const cars = ['./car/minibus/minibus.png','./car/minibus/minibus_headlight.png']
 
-        //keypress event
+    //keypress event
     $(document).on('keypress',function(e){
         if(e.which == 13){
             $($surface).toggleClass('moveRight');
@@ -29,15 +29,16 @@ const cars = ['./Car 1.PNG','./Car 2.PNG']
             if(flag){
                 flag = false;
                 $img.attr('src', cars[0]);
+                $img.css('width', '25%');
             }else{
                 flag = true;
                 $img.attr('src', cars[1]);
+                $img.css('width', '37.19%');
             }
         }
     })
-    
-});
 
+});
 
 // Typewriting Effect //
 const text = ['car animation', 'car animation', 'car animation']
@@ -53,7 +54,6 @@ let letter = '';
     currentText = text[count];
     letter = currentText.slice(0, ++index);
 
-
     setTimeout(type, 400);
-    
+
 }());

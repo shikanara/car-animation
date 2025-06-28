@@ -108,7 +108,7 @@ h2{
 }
 
 .moveRight {
-    animation: moveRight 6s linear infinite;
+    animation: moveRight 10s linear infinite;
 }
 
 .suspension {
