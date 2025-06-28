@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     //keypress event
     $(document).on('keypress',function(e){
-        if(e.which == 13){
+        if(e.which == 32){
             $($surface).toggleClass('moveRight');
             $($car).toggleClass('suspension');
 
@@ -53,7 +53,7 @@ $(document).ready(function(){
     })
 
     $(document).on('keypress',function(e){
-        if(e.which == 119){
+        if(e.which == 69){
             if(flag){
                 flag = false;
                 $img.attr('src', cars[0]);
