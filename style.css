@@ -34,6 +34,87 @@ h2{
     color: beige;
 }
 
+/* Background Selector Styles */
+.background-selector {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.background-selector label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.background-selector select {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.background-selector select:focus {
+    outline: 2px solid #4CAF50;
+}
+
+/* Background Classes */
+.day {
+    background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 100%);
+    background-image: url('./background/day.png');
+}
+
+.night {
+    background: linear-gradient(to bottom, #2c3e50 0%, #34495e 100%);
+    background-image: url('./background/night.png');
+}
+
+.twilight {
+    background: linear-gradient(to bottom, #ff7e5f 0%, #feb47b 100%);
+    background-image: url('./background/twilight.png');
+}
+
+.midnight {
+    background: linear-gradient(to bottom, #0c0c0c 0%, #1a1a1a 100%);
+    background-image: url('./background/midnight.jpg');
+}
+
+.noon {
+    background: linear-gradient(to bottom, #FFD700 0%, #87CEEB 100%);
+    background-image: url('./background/noon.png');
+}
+
+.afternoon {
+    background: linear-gradient(to bottom, #FFA500 0%, #FF6347 100%);
+    background-image: url('./background/afternoon.png');
+}
+
+.drawn {
+    background: linear-gradient(to bottom, #f0f0f0 0%, #d0d0d0 100%);
+    background-image: url('./background/drawn.png');
+}
+
+/* Common background properties */
+.day, .night, .twilight, .midnight, .noon, .afternoon, .drawn {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    min-height: 100vh;
+    width: 100%;
+}
+
 /* Car and Scenery */
 
 .night {

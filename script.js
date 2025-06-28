@@ -5,9 +5,22 @@ $(document).ready(function(){
     $car =$('.car');
     $img = $('.car img').first(); // Target only the car image, not wheels
     $wheels = $('.wheel');
+    $container = $('.night'); // Main container
     let flag = true;
 
+    // Updated car array with your new images
     const cars = ['./car/minibus/minibus.png','./car/minibus/minibus_headlight.png']
+
+    // Background selector event
+    $('#bg-select').on('change', function(){
+        const selectedBackground = $(this).val();
+
+        // Remove all background classes
+        $container.removeClass('day night twilight midnight noon afternoon drawn');
+
+        // Add the selected background class
+        $container.addClass(selectedBackground);
+    });
 
     //keypress event
     $(document).on('keypress',function(e){
@@ -33,7 +46,7 @@ $(document).ready(function(){
             }else{
                 flag = true;
                 $img.attr('src', cars[1]);
-                $img.css('width', '37.19%');
+                $img.css('width', '25%');
             }
         }
     })
