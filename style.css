@@ -110,7 +110,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
-    height: 1000px;
+    height: 931px;
     width: 100%;
     position: relative;
 }
@@ -127,7 +127,7 @@ h2{
 
 .surface-mountain {
     height: 220px;
-    width: 500%;
+    width: 1000%;
     display: block;
     position: absolute;
     bottom: 0%;
@@ -137,8 +137,8 @@ h2{
 }
 
 .surface-city {
-    height: 220px;
-    width: 500%;
+    height: 59%;
+    width: 1000%;
     display: block;
     position: absolute;
     bottom: 0%;
@@ -245,7 +245,7 @@ h2{
 }
 
 .moveRight {
-    animation: moveRight 10s linear infinite;
+    animation: moveRight 60s linear infinite;
 }
 
 .suspension {
@@ -255,7 +255,7 @@ h2{
 /* Keyframes */
 
 @keyframes moveRight{
-    100%{transform: translateX(-2950px)}
+    100%{transform: translateX(-20950px)}
 }
 
 @keyframes suspension{
