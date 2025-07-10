@@ -17,7 +17,7 @@ $(document).ready(function(){
         const selectedBackground = $(this).val();
 
         // Remove all background classes
-        $container.removeClass('day night twilight midnight noon afternoon drawn');
+        $container.removeClass('sunrise day night twilight midnight noon afternoon drawn');
 
         // Add the selected background class
         $container.addClass(selectedBackground);

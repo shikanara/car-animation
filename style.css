@@ -72,17 +72,22 @@ h2{
 /* Background Classes */
 .day {
     background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 100%);
-    background-image: url('./background/day.png');
+    background-image: url('./background/day.jpg');
+}
+
+.sunrise {
+    background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 100%);
+    background-image: url('./background/sunrise.jpg');
 }
 
 .night {
     background: linear-gradient(to bottom, #2c3e50 0%, #34495e 100%);
-    background-image: url('./background/night.png');
+    background-image: url('./background/night.jpg');
 }
 
 .twilight {
     background: linear-gradient(to bottom, #ff7e5f 0%, #feb47b 100%);
-    background-image: url('./background/twilight.png');
+    background-image: url('./background/twilight.jpg');
 }
 
 .midnight {
@@ -92,25 +97,25 @@ h2{
 
 .noon {
     background: linear-gradient(to bottom, #FFD700 0%, #87CEEB 100%);
-    background-image: url('./background/noon.png');
+    background-image: url('./background/noon.jpg');
 }
 
 .afternoon {
     background: linear-gradient(to bottom, #FFA500 0%, #FF6347 100%);
-    background-image: url('./background/afternoon.png');
+    background-image: url('./background/afternoon.jpg');
 }
 
 .drawn {
     background: linear-gradient(to bottom, #f0f0f0 0%, #d0d0d0 100%);
-    background-image: url('./background/drawn.png');
+    background-image: url('./background/drawn.jpg');
 }
 
 /* Common background properties */
-.day, .night, .twilight, .midnight, .noon, .afternoon, .drawn {
+.sunrise, .day, .night, .twilight, .midnight, .noon, .afternoon, .drawn {
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
-    height: 931px;
+    height: 900px;
     width: 100%;
     position: relative;
 }
@@ -118,7 +123,7 @@ h2{
 /* Car and Scenery */
 
 .night {
-    height: 1000px;
+    height: 900px;
     width: 100%;
     background-size: cover;
     position: relative;
@@ -126,7 +131,7 @@ h2{
 }
 
 .surface-mountain {
-    height: 220px;
+    height: 47%;
     width: 1000%;
     display: block;
     position: absolute;
@@ -245,7 +250,7 @@ h2{
 }
 
 .moveRight {
-    animation: moveRight 60s linear infinite;
+    animation: moveRight 120s linear infinite;
 }
 
 .suspension {
