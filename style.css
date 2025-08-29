@@ -105,13 +105,8 @@ h2{
     background-image: url('./background/afternoon.jpg');
 }
 
-.drawn {
-    background: linear-gradient(to bottom, #f0f0f0 0%, #d0d0d0 100%);
-    background-image: url('./background/drawn.jpg');
-}
-
 /* Common background properties */
-.sunrise, .day, .night, .twilight, .midnight, .noon, .afternoon, .drawn {
+.sunrise, .day, .night, .twilight, .midnight, .noon, .afternoon {
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
@@ -157,11 +152,14 @@ h2{
 }
 
 .surface-forest {
-    background: url('forest.png'); /* Add your forest background image */
-}
-
-.surface-desert {
-    background: url('desert.png'); /* Add your desert background image */
+    height: 50%;
+    width: 1000%;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    background: url(surface/forest.png); /* Add your forest background image */
 }
 
 .surface-beach {
@@ -178,18 +176,6 @@ h2{
 
 .surface-bridge {
     background: url('bridge.png'); /* Add your bridge background image */
-}
-
-.surface-tunnel {
-    background: url('tunnel.png'); /* Add your tunnel background image */
-}
-
-.surface-industrial {
-    background: url('industrial.png'); /* Add your industrial background image */
-}
-
-.surface-suburban {
-    background: url('suburban.png'); /* Add your suburban background image */
 }
 
 .car{
